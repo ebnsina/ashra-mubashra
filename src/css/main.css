@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-color: #15203a;
+	--bg-color-light: #23304b;
+	--text-color: #20a26c;
+	--text-color-light: #3aad5b;
+}
+
+body {
+	font-family: 'Antic Slab', serif;
+
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	text-align: center;
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	margin-bottom: 4rem;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+
+.card {
+	background: var(--bg-color-light);
+	color: var(--text-color-light);
+	padding: 2rem;
+	border-radius: 1rem;
+	transition: all 0.2s;
+	border: solid 1px transparent;
+}
+
+.card:hover {
+	background: var(--bg-color);
+	border: solid 1px var(--text-color-light);
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+	body {
+		padding: 2rem;
+	}
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
+	}
+
+	footer {
+		margin-top: 1rem;
+	}
+}
