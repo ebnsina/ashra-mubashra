@@ -1,8 +1,11 @@
 <script>
-	import '../css/main.css';
 	import Footer from '../lib/components/Footer.svelte';
+
+	import '../css/main.css';
 </script>
 
-<slot />
+<main>
+	<slot />
+</main>
 
 <Footer />

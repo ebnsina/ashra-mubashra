@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;400;700&display=swap');
 
 *,
 *::before,
@@ -16,8 +16,7 @@
 }
 
 body {
-	font-family: 'Antic Slab', serif;
-
+	font-family: 'Epilogue', sans-serif;
 	display: grid;
 	place-items: center;
 	min-height: 100vh;
@@ -31,21 +30,14 @@ a {
 	color: inherit;
 }
 
-h1 {
-	margin-bottom: 4rem;
+.title {
+	margin-bottom: 2rem;
 }
 
-ul,
-li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-ul {
+.items {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 1rem;
+	gap: 3rem;
 }
 
 .card {
@@ -55,6 +47,8 @@ ul {
 	border-radius: 1rem;
 	transition: all 0.2s;
 	border: solid 1px transparent;
+	position: relative;
+	font-size: 1.5rem;
 }
 
 .card:hover {
@@ -63,8 +57,27 @@ ul {
 	cursor: pointer;
 }
 
-footer {
+.float-idx {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 3rem;
+	transform: translateY(-40%);
+	font-weight: 700;
+	color: rgb(221, 221, 221, 0.2);
+}
+
+.footer {
 	margin-top: 4rem;
+}
+
+.footer a {
+	transition: all 0.2s;
+}
+
+.footer a:hover {
+	text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -72,13 +85,13 @@ footer {
 		padding: 2rem;
 	}
 
-	ul {
+	.items {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		gap: 1rem;
+		gap: 2rem;
 	}
 
-	footer {
+	.footer {
 		margin-top: 1rem;
 	}
 }

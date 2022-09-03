@@ -1,8 +1,8 @@
 const shabas = [
 	{ id: 1, name: 'Abu Bakr', link: 'https://en.wikipedia.org/wiki/Abu_Bakr' },
 	{ id: 2, name: 'Umar Ibn Al-Khattab', link: 'https://en.wikipedia.org/wiki/Umar_ibn_al-Khattab' },
-	{ id: 3, name: 'Uthman Ibn Affan', link: 'https://en.wikipedia.org/wiki/Uthman' },
-	{ id: 4, name: 'Ali Ibn Abi Talib', link: 'https://en.wikipedia.org/wiki/Ali' },
+	{ id: 3, name: 'Ali Ibn Abi Talib', link: 'https://en.wikipedia.org/wiki/Ali' },
+	{ id: 4, name: 'Uthman Ibn Affan', link: 'https://en.wikipedia.org/wiki/Uthman' },
 	{ id: 5, name: 'Talha Ibn Ubayd Allah', link: 'https://en.wikipedia.org/wiki/Talha' },
 	{ id: 6, name: 'Zubayr Ibn Al-Awwam', link: 'https://en.wikipedia.org/wiki/Zubayr_ibn_al-Awwam' },
 	{
