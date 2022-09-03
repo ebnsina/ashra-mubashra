@@ -68,6 +68,10 @@ a {
 	color: rgb(221, 221, 221, 0.2);
 }
 
+.card:hover .float-idx {
+	color: var(--text-color-light);
+}
+
 .footer {
 	margin-top: 4rem;
 }
